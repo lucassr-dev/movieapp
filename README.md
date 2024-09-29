@@ -65,7 +65,7 @@ Para iniciar a aplicação em modo de desenvolvimento, execute:
     npm start
     # ou
     yarn start
-    ```
+   ```
 A aplicação estará disponível em http://localhost:3000.
 
 Build para Produção
@@ -76,8 +76,8 @@ Os arquivos de build serão gerados na pasta build.
 Deploy
 Você pode fazer o deploy da aplicação em qualquer serviço de hospedagem estática, como Vercel, Netlify, GitHub Pages, etc.
 
-### Estrutura do Projeto
-
+## Estrutura do Projeto
+```
 movieapp/
 ├── public/
 │   ├── index.html
@@ -121,10 +121,10 @@ movieapp/
 ├── package.json
 ├── README.md
 └── tailwind.config.js
-
-### Contribuição
+```
+## Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-### Licença
+## Licença
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 

@@ -7,7 +7,6 @@ const ExplorePage = () => {
   const params = useParams()
   const [pageNo,setPageNo] = useState(1)
   const [data,setData] = useState([])
-  // const [totalPageNo,setTotalPageNo] = useState(0)
 
   console.log("params",params.explore)
   
@@ -24,7 +23,6 @@ const ExplorePage = () => {
               ...response.data.results
           ]
         })
-        // setTotalPageNo(response.data.total_pages)
     } catch (error) {
         console.log('error',error)
     }

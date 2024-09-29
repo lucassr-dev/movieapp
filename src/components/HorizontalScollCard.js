@@ -4,20 +4,20 @@ import Card from './Card'
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 
 const HorizontalScollCard = ({data = [], heading, trending, media_type}) => {
-    const contaierRef = useRef()
+    const containerRef = useRef()
 
     const handleNext = ()=>{
-        contaierRef.current.scrollLeft += 300
+        containerRef.current.scrollLeft += 300
     }
     const handlePrevious = ()=>{
-        contaierRef.current.scrollLeft -= 300
+        containerRef.current.scrollLeft -= 300
     }
   return (
     <div className='container mx-auto px-3 my-10'>
           <h2 className='text-xl lg:text-2xl font-bold mb-3 text-white capitalize'>{heading}</h2>
 
           <div className=' relative'>
-                <div  ref={contaierRef} className='grid grid-cols-[repeat(auto-fit,230px)] grid-flow-col gap-6 overflow-hidden overflow-x-scroll relative z-10 scroll-smooth transition-all scrolbar-none'>
+                <div  ref={containerRef} className='grid grid-cols-[repeat(auto-fit,230px)] grid-flow-col gap-6 overflow-hidden overflow-x-scroll relative z-10 scroll-smooth transition-all scrolbar-none'>
                     {
                         data.map((data,index)=>{
                         return (

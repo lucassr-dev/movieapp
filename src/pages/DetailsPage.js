@@ -49,6 +49,7 @@ const formatCurrency = (value) => {
     "Planned": "Planejado",
     "Canceled": "Cancelado",
     "Ended": "Finalizado",
+    "Returning Series": "Série retoranando",
   }
 
   return (
